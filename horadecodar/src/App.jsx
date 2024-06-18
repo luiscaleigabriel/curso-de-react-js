@@ -1,15 +1,10 @@
 import './App.css';
-import HeloWord from './components/HeloWord';
+import Pessoa from './components/Pessoa';
 
 function App() {
-
-  const name = 'Luís';
-
   return (
     <div className='prieira'>
-      <h1>Olá, mundo! {name} </h1>
-      <p>Coeçamos ok</p>
-      <HeloWord />
+      <Pessoa nome="Luís Gabriel" foto="../public/WhatsApp Image 2024-06-15 at 18.00.04 (1).jpeg" idade="20" prof="Informático" />
     </div>
   )
 }

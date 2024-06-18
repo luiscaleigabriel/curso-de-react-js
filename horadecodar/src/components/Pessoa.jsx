@@ -1,3 +1,4 @@
+import HeloWord from "./HeloWord"
 
 function Pessoa({foto, nome, idade, prof}) {
   return (

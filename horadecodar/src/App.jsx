@@ -1,12 +1,14 @@
 import './App.css';
-import List from './components/List';
-import Pessoa from './components/Pessoa';
+import Evento from './components/Evento';
+import Form from './components/Form';
+
 
 function App() {
   return (
     <div className='prieira'>
-      <Pessoa nome="Luís Gabriel" foto="../public/WhatsApp Image 2024-06-15 at 18.00.04 (1).jpeg" idade="20" prof="Informático" />
-      <List />
+      <h1>Testando Eventos</h1>
+      <Evento />
+      <Form />
     </div>
   )
 }

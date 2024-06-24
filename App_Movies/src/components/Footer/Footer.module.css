@@ -1,0 +1,21 @@
+.footer {
+  background-color: #000;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer > p > span {
+  color: #b71c1c;
+  font-size: 2rem;
+  font-weight: 500;
+}

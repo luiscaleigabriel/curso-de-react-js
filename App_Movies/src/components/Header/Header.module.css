@@ -1,0 +1,52 @@
+.header {
+  padding: 0.5rem;
+  background-color: #000;
+  border-bottom: 2px solid #f44336;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header span {
+  color: #b71c1c;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.header > nav {
+  margin-right: 2rem;
+} 
+
+.header > nav > ul {
+  display: flex;
+  align-items: center;
+} 
+
+.header > nav > ul > li > a {
+  position: relative;
+  color: #fff;
+  font-size: 1.3rem;
+  padding-inline: 1rem;
+} 
+
+.header > nav > ul > li > a::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+
+  height: 3px;
+  width: 0%;
+  border-radius: 20px;
+  background-color: #fff;
+
+  transition: all .5s ease;
+} 
+
+.header > nav > ul > li > a:hover::before {
+  width: 80%;
+} 

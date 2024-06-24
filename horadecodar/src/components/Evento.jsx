@@ -1,3 +1,4 @@
+import Button from './Button'
 import style from './Evento.module.css'
 
 function Evento() {
@@ -9,7 +10,7 @@ function Evento() {
   return (
     <>
       <p>Click para disparar um evento</p>
-      <button onClick={meuEvento}>Ativar</button>
+      <Button event={meuEvento} text="Primeiro"/>
     </>
   )
 }

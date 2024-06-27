@@ -10,8 +10,8 @@ function App() {
       <Header />
       <Banner image = "home" />
       <Containner>
-        <h2>Olá, Mundo!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in deserunt magnam dolorum vitae aut placeat.</p>
+        <h2>Geografia</h2>
+        listar videos
       </Containner>
       <Footer />
     </>

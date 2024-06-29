@@ -1,12 +1,12 @@
 import style from './Card.module.css'
 
-function Card() {
+function Card({ to, image }) {
   return (
     <section className={style.card}>
-      <a href=""
+      <a href={to}
       rel='noreferrer nooper'
       target='_blank'>
-        <img src="" alt="Capa" />
+        <img src={image} alt="Capa" />
       </a>
     </section>
   )

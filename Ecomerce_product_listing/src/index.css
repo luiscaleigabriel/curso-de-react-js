@@ -17,6 +17,10 @@
   --white: #fff;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   color: var(--white);
   background-color: var(--bg);
@@ -26,6 +30,35 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  color: var(--cta);
+  font-size: 1.5rem;
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav > ul > li ,
+.search > i{
+  color: #a89d9d;
+  transition: all .5s ease;
+}
+
+nav > ul > li:hover,
+.search > i:hover {
+  cursor: pointer;
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.search > i {
+  padding-inline: 5px;
+  font-size: 1.1rem;
 }
 
 .container {
@@ -42,5 +75,87 @@ nav {
 }
 
 .main_content {
-  
+  text-align: center;
+  margin-block: 20px;
 }
+
+.main_content > h3 {
+  font-size: 2rem;
+  margin-block: 20px;
+}
+
+.cards {
+  padding: 40px 10px;
+  display: grid;
+  gap: 70px;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+}
+
+.card {
+  padding: 20px 10px;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  color: var(--cta);
+  font-size: 1.3rem;
+}
+
+.card:hover {
+  background-color: var(--ligth_bg);
+  transform: scale(1.04);
+}
+
+.card_header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.price {
+  display: flex;
+  gap: 3px;
+  flex-direction: row-reverse;
+  font-size: 1.2rem;
+}
+
+.btn-add {
+  width: 180px;
+  cursor: pointer;
+  color: var(--white);
+  padding: 10px 20px;
+  border: 2px solid var(--cta);
+  background-color: var(--cta);
+  transition: all .5s ease;
+}
+
+.btn-add:hover {
+  color: var(--cta);
+  background-color: transparent;
+}
+
+.footer {
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer i {
+  padding-inline: 5px;
+  font-size: 1.1rem;
+  transition: all .5s ease;
+}
+
+.footer i:hover {
+  cursor: pointer;
+  color: var(--white);
+  transform: scale(1.1);
+}
+

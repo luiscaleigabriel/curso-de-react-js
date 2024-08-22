@@ -1,18 +1,23 @@
-import style from './Header.module.css'
+import { useState } from 'react'
+import styles from './Header.module.css'
 
 function Header() {
+  const [fixed, setFixed] = useState(false)
+  const fixedMenu = () => {
+    if (window.scrollY >= 50) {
+      setFixed(true)
+    }else {
+      setFixed(false)
+    }
+  }
+
+  window.addEventListener('scroll', fixedMenu)
   return (
-    <header className={style.header}>
+    <header className={ `${styles.header} ${fixed ? styles.fixed : ''}` }>
       <span>LuísFlix</span>
       <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Assistir</a>
-          </li>
-        </ul>
+        <a href="#">Home</a>
+        <a href="#">Assistir</a>
       </nav>
     </header>
   )

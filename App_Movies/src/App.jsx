@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
 import Card from "./components/Card"
+import Category from "./components/Category"
 import Container from "./components/Container"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
@@ -12,12 +13,11 @@ function App() {
       <Header />
       <Banner image='/images/banner-home.png' />
       <Container>
-        <h2>Geografia</h2>
-        <section className="cards">
+        <Category category='Geografia'>
           {videos.map(video => 
             <Card key={video.id} link={video.url} image={video.cover} />
           )}
-        </section>
+        </Category>
       </Container>
       <Footer />
     </>
